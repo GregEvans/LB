@@ -35,10 +35,12 @@ h1 {
 }
 h2 {
   font-size: 2rem;
-   font-weight: 900;
-   color: #000;
+  font-weight: 900;
+  color: hotpink;
   padding-bottom: 3rem;
+  z-index: 9999999;
 }
+
 h3 {
   font-size: .8rem;
   text-transform: uppercase;
@@ -51,6 +53,8 @@ p {
 #container img {
   position: fixed;
   width: 111px;
+  z-index: -9;
+  opacity: .1;
 }
 
 #container img:nth-child(2) {width: 222px;}

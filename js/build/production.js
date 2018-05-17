@@ -10511,7 +10511,7 @@ function moveDiv() {
       },
       cycle = function(img) {
         var _this = img || this;
-        _this.fadeOut(5000, updateCSS.bind(_this)).fadeIn(1111, cycle.bind(_this));
+        _this.fadeOut(1000, updateCSS.bind(_this)).fadeIn(111, cycle.bind(_this));
       };
   
     while (src = images.shift()) {
