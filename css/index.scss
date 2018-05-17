@@ -122,7 +122,100 @@ p {
   }
 }
 
+#background-wrap {
+  bottom: 0;
+	left: 0;
+	padding-top: 50px;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+.fart-bolts {
+  display: block;
+  position: absolute;
+  margin: 0 auto;
+}
+h2.timer {
+  font-size: 366px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  animation: move 5s linear infinite alternate;
+}
+/* KEYFRAMES */
 
+
+@keyframes move {
+  from { z-index: 0;}
+  to { z-index: -1;}
+}
+
+@keyframes animateCloud {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+/* ANIMATIONS */
+
+.x1 {
+	animation: animateCloud 9s linear infinite;
+	transform: scale(0.65);
+}
+
+.x2 {
+	animation: animateCloud 7s linear infinite;
+	transform: scale(0.3);
+ // background: red;
+}
+
+.x3 {
+	animation: animateCloud 10s linear infinite;
+	transform: scale(0.5);
+}
+
+.x4 {
+	animation: animateCloud 8s linear infinite;;
+	transform: scale(0.4);
+}
+
+.x5 {
+	animation: animateCloud 11s linear infinite;
+	transform: scale(0.55);
+  
+}
+.xmini {
+	animation: animateCloud 9s linear infinite;
+	transform: scale(0.3);
+}
+
+.xfart {
+	animation: animateCloud 5s linear infinite;
+	transform: scale(0.5);
+}
+
+/* OBJECTS */
+
+.cloud {
+	height: 111px;
+  width: 120px;
+	position: relative;
+	width: 350px;
+}
+
+.cloud:after {
+  width: 220px;
+	position: absolute;
+  content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1022026/lightning-bolt.svg);
+  transform: rotate(-50deg) translateY(50%);
+}
 
 
 @keyframes fade {
